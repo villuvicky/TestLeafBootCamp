@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="baseUrl" value="https://login.salesforce.com"/>
+  <parameter name="password" value="SelBootcamp$123"/>
+  <parameter name="username" value="makaia@testleaf.com"/>
+  <listeners>
+    <listener class-name="testNg.RetryListener"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="testNg.EditOpportunity">
+        <methods>
+          <include name="openBrowserAndLogin"/>
+          <include name="EditOpportunityTest"/>
+          <include name="setSheetName"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testNg.EditOpportunity -->
+      <class name="testNg.DeleteOpportunity">
+        <methods>
+          <include name="openBrowserAndLogin"/>
+          <include name="setSheetName"/>
+          <include name="DeleteOpportunityTest" invocation-numbers="0 0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testNg.DeleteOpportunity -->
+      <class name="testNg.CreateNewOpportunity">
+        <methods>
+          <include name="openBrowserAndLogin"/>
+          <include name="setSheetName"/>
+          <include name="tearDown"/>
+          <include name="CreateNewOpportunityTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNg.CreateNewOpportunity -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
