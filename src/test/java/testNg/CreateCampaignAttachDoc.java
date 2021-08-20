@@ -45,7 +45,7 @@ public class CreateCampaignAttachDoc extends baseClass{
 	public void createCampain(String campaign, String SuccessMessage) throws InterruptedException, AWTException {
 		
 		WebElement toggle=driver.findElement(By.xpath("//button[contains(@class,'slds-button slds-icon-waffle_container')]"));
-		//toggle.click();
+		toggle.click();
 		
 		WebElement viewAll=driver.findElement(By.xpath("//button[text()='View All']"));
 		viewAll.click();

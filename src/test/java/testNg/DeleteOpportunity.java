@@ -25,7 +25,7 @@ public class DeleteOpportunity extends baseClass{
 		sheetName="DeleteOpportunity";
 	}
 
-	@Test(dataProvider = "fecthData", dependsOnMethods = {"testNg.EditOpportunity.EditOpportunityTest"})
+	@Test(dataProvider = "fecthData", dependsOnMethods = {"testNg.EditOpportunity.EditOpportunityTest"},groups = { "Opportunity"})
 	public void DeleteOpportunityTest(String opportunityName,String deleteMessage ) throws InterruptedException {
 		// TODO Auto-generated method stub
 

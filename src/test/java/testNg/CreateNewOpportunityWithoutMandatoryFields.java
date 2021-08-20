@@ -20,7 +20,7 @@ public class CreateNewOpportunityWithoutMandatoryFields extends baseClass{
 		sheetName="CreateNewOpportunityWithoutMand";
 	}
 
-	@Test(dataProvider = "fecthData")
+	@Test(dataProvider = "fecthData",groups = { "Opportunity"})
 	public  void CreateNewOpportunityWithoutMandatoryFieldsTest(String message1,String message2,String message3 ) {
 		
 		

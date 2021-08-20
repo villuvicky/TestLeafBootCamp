@@ -8,31 +8,32 @@
     <listener class-name="testNg.RetryListener"/>
   </listeners>
   <test thread-count="5" parallel="classes" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Opportunity"/>
+      </run>
+    </groups>
     <classes>
       <class name="testNg.EditOpportunity">
         <methods>
-          <include name="openBrowserAndLogin"/>
           <include name="EditOpportunityTest"/>
-          <include name="setSheetName"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- testNg.EditOpportunity -->
-      <class name="testNg.DeleteOpportunity">
+      <class name="testNg.CreateNewOpportunityWithoutMandatoryFields">
         <methods>
-          <include name="openBrowserAndLogin"/>
-          <include name="setSheetName"/>
-          <include name="DeleteOpportunityTest" invocation-numbers="0 0"/>
-          <include name="tearDown"/>
+          <include name="CreateNewOpportunityWithoutMandatoryFieldsTest"/>
         </methods>
-      </class> <!-- testNg.DeleteOpportunity -->
+      </class> <!-- testNg.CreateNewOpportunityWithoutMandatoryFields -->
       <class name="testNg.CreateNewOpportunity">
         <methods>
-          <include name="openBrowserAndLogin"/>
-          <include name="setSheetName"/>
-          <include name="tearDown"/>
-          <include name="CreateNewOpportunityTest" invocation-numbers="0"/>
+          <include name="CreateNewOpportunityTest"/>
         </methods>
       </class> <!-- testNg.CreateNewOpportunity -->
+      <class name="testNg.DeleteOpportunity">
+        <methods>
+          <include name="DeleteOpportunityTest"/>
+        </methods>
+      </class> <!-- testNg.DeleteOpportunity -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

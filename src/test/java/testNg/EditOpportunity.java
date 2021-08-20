@@ -26,7 +26,7 @@ public class EditOpportunity extends baseClass{
 		sheetName="EditOpportunity";
 	}
 	
-	@Test(dataProvider = "fecthData", dependsOnMethods = { "testNg.CreateNewOpportunity.CreateNewOpportunityTest"})
+	@Test(dataProvider = "fecthData", dependsOnMethods = { "testNg.CreateNewOpportunity.CreateNewOpportunityTest"}, groups = { "Opportunity"})
 	public  void EditOpportunityTest(String opportunityName,String stageType, String deliveryStatus, String descriptionValue) throws InterruptedException  {
 		
 		WebElement toggle=driver.findElement(By.xpath("//button[contains(@class,'slds-button slds-icon-waffle_container')]"));

@@ -23,7 +23,7 @@ public class CreateNewOpportunity extends baseClass{
 		sheetName="CreateNewOpportunity";
 	}
 
-	@Test(dataProvider = "fecthData")
+	@Test(dataProvider = "fecthData",groups = { "Opportunity"})
 	public  void CreateNewOpportunityTest(String opportunityName, String stageType, String successMessage)  {
 		// TODO Auto-generated method stub
 
