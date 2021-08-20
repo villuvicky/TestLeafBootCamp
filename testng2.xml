@@ -11,11 +11,6 @@
 	<parameter name="username" value="makaia@testleaf.com" />
 	<parameter name="password" value="SelBootcamp$123" />
 	<test thread-count="5" name="Test" parallel='classes'>
-		<groups>
-			<run>
-				<include name="Opportunity" />
-			</run>
-		</groups>
 		<classes>
 			<class name="testNg.CreateNewOpportunity" />
 			<class name="testNg.EditOpportunity" />
