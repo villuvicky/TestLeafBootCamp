@@ -14,13 +14,13 @@ import org.testng.annotations.Test;
 public class CreateNewOpportunityWithoutMandatoryFields extends baseClass{
 
 	
-	@BeforeClass
+	@BeforeClass(groups = { "Opportunity"})
 	public void setSheetName() {
 		
 		sheetName="CreateNewOpportunityWithoutMand";
 	}
 
-	@Test(dataProvider = "fecthData",groups = { "Opportunity"})
+	@Test(dataProvider = "fecthData")
 	public  void CreateNewOpportunityWithoutMandatoryFieldsTest(String message1,String message2,String message3 ) {
 		
 		

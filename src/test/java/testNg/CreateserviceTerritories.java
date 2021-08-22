@@ -28,8 +28,8 @@ public class CreateserviceTerritories extends baseClass{
 		WebElement ViewAll = driver.findElement(By.xpath("//button[text()='View All']"));
 		ViewAll.click();
 
-		WebElement contacts = driver.findElement(By.xpath("//a[@data-label='Service Territories']"));
-		driver.executeScript("arguments[0].click();", contacts);
+		WebElement serviceTerritories = driver.findElement(By.xpath("//a[@data-label='Service Territories']"));
+		driver.executeScript("arguments[0].click();", serviceTerritories);
 
 		Thread.sleep(2000);
 
@@ -46,7 +46,6 @@ public class CreateserviceTerritories extends baseClass{
 		firstOperatingHour.click();
 
 		WebElement checkBox=driver.findElement(By.xpath("(//span[text()='Active'])[2]//following::input[@type='checkbox']"));
-
 		checkBox.click();
 
 		WebElement cityBox= driver.findElement(By.xpath("//span[text()='City']//following::input[@placeholder='City']"));
@@ -60,7 +59,6 @@ public class CreateserviceTerritories extends baseClass{
 
 		WebElement postalCodeBox= driver.findElement(By.xpath("//span[text()='Zip/Postal Code']//following::input[@placeholder='Zip/Postal Code']"));
 		postalCodeBox.sendKeys(postalCode);
-
 
 		WebElement saveButton= driver.findElement(By.xpath("//button[@title='Save']"));
 		saveButton.click();

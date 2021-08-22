@@ -14,26 +14,11 @@
       </run>
     </groups>
     <classes>
-      <class name="testNg.EditOpportunity">
-        <methods>
-          <include name="EditOpportunityTest"/>
-        </methods>
-      </class> <!-- testNg.EditOpportunity -->
-      <class name="testNg.CreateNewOpportunityWithoutMandatoryFields">
-        <methods>
-          <include name="CreateNewOpportunityWithoutMandatoryFieldsTest"/>
-        </methods>
-      </class> <!-- testNg.CreateNewOpportunityWithoutMandatoryFields -->
       <class name="testNg.CreateNewOpportunity">
         <methods>
           <include name="CreateNewOpportunityTest"/>
         </methods>
       </class> <!-- testNg.CreateNewOpportunity -->
-      <class name="testNg.DeleteOpportunity">
-        <methods>
-          <include name="DeleteOpportunityTest"/>
-        </methods>
-      </class> <!-- testNg.DeleteOpportunity -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

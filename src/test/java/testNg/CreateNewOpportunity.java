@@ -17,7 +17,7 @@ public class CreateNewOpportunity extends baseClass{
 	 * "Opportunity \"Salesforce Automation by Vignesh Kannan\" was created.";
 	 */
 
-	@BeforeClass
+	@BeforeClass(groups = { "Opportunity"})
 	public void setSheetName() {
 		
 		sheetName="CreateNewOpportunity";

@@ -3,7 +3,6 @@ package testNg;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,8 +13,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pages.LoginPage;
 
-public class baseClass {
+public class BaseClass2 {
 
 	public ChromeDriver driver;
 	static WebDriverWait wait;
@@ -44,7 +44,7 @@ public class baseClass {
 	
 	@BeforeMethod(alwaysRun = true)
 	@Parameters({"baseUrl","username","password"})
-	public void openBrowserAndLogin(String URL, String Username, String Password) throws InterruptedException {
+	public void openBrowserAndLogin(String URL, String Userame, String Password) throws InterruptedException {
 
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-notifications");
@@ -56,29 +56,14 @@ public class baseClass {
 		driver.manage().window().maximize();
 
 		driver.get(URL);
-
-		WebElement userName=driver.findElement(By.id("username"));
-		userName.sendKeys(Username);
-
-		WebElement password=driver.findElement(By.id("password"));
-		password.sendKeys(Password);
-
-		driver.findElement(By.id("Login")).submit();
-
+		
+		LoginPage lp =new LoginPage(driver);
+		lp.enterUserName(Userame).enterPassword(Password).clickLogin();
+		
 	}
 
 	@AfterMethod(alwaysRun = true)
 	public void tearDown() throws InterruptedException {
-
-		Thread.sleep(1000);
-
-		WebElement logoutIcon=driver.findElement(By.xpath(
-				"(//img[@title='User']//parent::span[@class='uiImage'])[1]"));
-		waitClickMethod(driver, logoutIcon);
-
-		WebElement logOut=driver.findElement(By.xpath("//a[text()='Log Out']"));
-		waitClickMethod(driver, logOut);
-
 
 		driver.quit();
 

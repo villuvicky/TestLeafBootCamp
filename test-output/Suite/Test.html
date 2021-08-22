@@ -55,141 +55,30 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 20 08:52:14 IST 2021</td>
+<td>Started on:</td><td>Sat Aug 21 15:27:17 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (597 ms)</td>
+<tr><td>Total time:</td><td>13 seconds (13800 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>Opportunity </td>
+<td>Included groups:</td><td></td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testNg.CreateNewOpportunityWithoutMandatoryFields.CreateNewOpportunityWithoutMandatoryFieldsTest()'><b>CreateNewOpportunityWithoutMandatoryFieldsTest</b><br>Test class: testNg.CreateNewOpportunityWithoutMandatoryFields</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.lang.NullPointerException
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheet(XSSFWorkbook.java:1120)
-	at testNg.ReadExcel.excelData(ReadExcel.java:13)
-	at testNg.baseClass.getData(baseClass.java:42)
-	... 12 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace636060109", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace636060109'><pre>java.lang.RuntimeException: java.lang.NullPointerException
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.lang.NullPointerException
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheet(XSSFWorkbook.java:1120)
-	at testNg.ReadExcel.excelData(ReadExcel.java:13)
-	at testNg.baseClass.getData(baseClass.java:42)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-	... 12 more
-</pre></div></td>
-<td>0</td>
-<td>testNg.CreateNewOpportunityWithoutMandatoryFields@710c2b53</td></tr>
-<tr>
-<td title='testNg.DeleteOpportunity.DeleteOpportunityTest()'><b>DeleteOpportunityTest</b><br>Test class: testNg.DeleteOpportunity</td>
-<td><div><pre>java.lang.Throwable: Method DeleteOpportunity.DeleteOpportunityTest(java.lang.String,java.lang.String)[pri:0, instance:testNg.DeleteOpportunity@2767e23c] depends on not successfully finished methods
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1825333515", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1825333515'><pre>java.lang.Throwable: Method DeleteOpportunity.DeleteOpportunityTest(java.lang.String,java.lang.String)[pri:0, instance:testNg.DeleteOpportunity@2767e23c] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre></div></td>
-<td>0</td>
-<td>testNg.DeleteOpportunity@2767e23c</td></tr>
-<tr>
-<td title='testNg.EditOpportunity.EditOpportunityTest()'><b>EditOpportunityTest</b><br>Test class: testNg.EditOpportunity</td>
-<td><div><pre>java.lang.Throwable: Method EditOpportunity.EditOpportunityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testNg.EditOpportunity@6fa51cd4] depends on not successfully finished methods
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1417988953", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1417988953'><pre>java.lang.Throwable: Method EditOpportunity.EditOpportunityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testNg.EditOpportunity@6fa51cd4] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre></div></td>
-<td>0</td>
-<td>testNg.EditOpportunity@6fa51cd4</td></tr>
-<tr>
-<td title='testNg.CreateNewOpportunity.CreateNewOpportunityTest()'><b>CreateNewOpportunityTest</b><br>Test class: testNg.CreateNewOpportunity</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.lang.NullPointerException
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheet(XSSFWorkbook.java:1120)
-	at testNg.ReadExcel.excelData(ReadExcel.java:13)
-	at testNg.baseClass.getData(baseClass.java:42)
-	... 12 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1277950133", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1277950133'><pre>java.lang.RuntimeException: java.lang.NullPointerException
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.lang.NullPointerException
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheet(XSSFWorkbook.java:1120)
-	at testNg.ReadExcel.excelData(ReadExcel.java:13)
-	at testNg.baseClass.getData(baseClass.java:42)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-	... 12 more
-</pre></div></td>
-<td>0</td>
-<td>testNg.CreateNewOpportunity@5afa3c9</td></tr>
+<td title='testCases.CreateNewOpportunityTest.create()'><b>create</b><br>Test class: testCases.CreateNewOpportunityTest</td>
+<td></td>
+<td>9</td>
+<td>testCases.CreateNewOpportunityTest@5386659f</td></tr>
 </table><p>
 </body>
 </html>

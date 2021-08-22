@@ -20,13 +20,14 @@ public class EditOpportunity extends baseClass{
 	 * static String stage="Perception Analysis"; static String
 	 * deliveryStatus="In progress";
 	 */
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	public void setSheetName() {
 		
 		sheetName="EditOpportunity";
+		System.out.println("from edit");
 	}
 	
-	@Test(dataProvider = "fecthData", dependsOnMethods = { "testNg.CreateNewOpportunity.CreateNewOpportunityTest"}, groups = { "Opportunity"})
+	@Test(dataProvider = "fecthData", dependsOnMethods = { "testNg.CreateNewOpportunity.CreateNewOpportunityTest"}, groups = { "Opportunity2"})
 	public  void EditOpportunityTest(String opportunityName,String stageType, String deliveryStatus, String descriptionValue) throws InterruptedException  {
 		
 		WebElement toggle=driver.findElement(By.xpath("//button[contains(@class,'slds-button slds-icon-waffle_container')]"));

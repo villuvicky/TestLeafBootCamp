@@ -12,10 +12,7 @@
 	<parameter name="password" value="SelBootcamp$123" />
 	<test thread-count="5" name="Test" parallel='classes'>
 		<classes>
-			<class name="testNg.CreateNewOpportunity" />
-			<class name="testNg.EditOpportunity" />
-			<class name="testNg.DeleteOpportunity" />
-			<class name="testNg.CreateNewOpportunityWithoutMandatoryFields" />
+			<class name="testCases.CreateNewOpportunityTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

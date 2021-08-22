@@ -19,7 +19,7 @@ public class DeleteOpportunity extends baseClass{
 	 */
 
 	
-	@BeforeClass
+	@BeforeClass(groups = { "Opportunity"})
 	public void setSheetName() {
 		
 		sheetName="DeleteOpportunity";

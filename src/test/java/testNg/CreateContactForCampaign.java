@@ -17,7 +17,7 @@ public class CreateContactForCampaign extends baseClass{
 	}
 
 	@Test(dataProvider = "fecthData")
-	public void createContactForCampaign(String campaign,String salutationValue, String contactFirstName, String contactLastName) throws InterruptedException {
+	public void createContactForCampaign(String campaign,String salutationValue, String contactFirstName, String contactLastName, String fullName) throws InterruptedException {
 
 		WebElement toggle = driver
 				.findElement(By.xpath("//button[contains(@class,'slds-button slds-icon-waffle_container')]"));
@@ -65,7 +65,7 @@ public class CreateContactForCampaign extends baseClass{
 		driver.executeScript("arguments[0].click();", addContact);
 		//addContact.click();
 
-		String fullName=contactFirstName+" "+contactLastName;
+		// fullName=contactFirstName+" "+contactLastName;
 		
 		WebElement searchContact=driver.findElement(By.xpath("//input[@title='Search Contacts']"));
 		searchContact.sendKeys(fullName);
